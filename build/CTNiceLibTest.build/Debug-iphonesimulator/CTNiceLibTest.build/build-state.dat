@@ -1,0 +1,238 @@
+TCTNiceLibTest
+v7
+r0
+t321200084.788668
+cCheck dependencies
+cProcessInfoPlistFile /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/Info.plist CTNiceLibTest-Info.plist
+cCompileXIB /Users/calvintam/Projects/CTNiceLibTest/MainWindow.xib
+cProcessPCH /var/folders/cb/cbfhHt4uF48U3RKuz2TfmE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CTNiceLibTest_Prefix-cimrhwamyqwipnahcxgwowldicgm/CTNiceLibTest_Prefix.pch.gch CTNiceLibTest_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/main.o /Users/calvintam/Projects/CTNiceLibTest/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLibTestAppDelegate.o /Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLib.o /Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/CTNiceLibTest normal i386
+cGenerateDSYMFile /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app.dSYM /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/CTNiceLibTest
+cTouch /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Users/calvintam/Projects/CTNiceLibTest/CTNiceLibTest_Prefix.pch
+c000000004D6C702700000000000000C3
+t1298952231
+s195
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.h
+c000000004D74E8420000000000000638
+t1299507266
+s1592
+i<UIKit/UIKit.h>
+
+N/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m
+c000000004D74E8510000000000001EE9
+t1299507281
+s7913
+i"CTNiceLib.h"
+
+N/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.h
+c000000004D6C726E0000000000000164
+t1298952814
+s356
+i<UIKit/UIKit.h>
+i"CTNiceLib.h"
+
+N/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m
+c000000004D6CAE540000000000001480
+t1298968148
+s5248
+i"CTNiceLibTestAppDelegate.h"
+
+N/Users/calvintam/Projects/CTNiceLibTest/MainWindow.xib
+c000000004D6C70270000000000002126
+t1298952231
+s8486
+
+N/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLib.o
+t1299507284
+s39968
+
+N/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLibTest.LinkFileList
+c000000004D6C714100000000000001AE
+t1298952513
+s430
+
+N/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLibTestAppDelegate.o
+t1299507284
+s54984
+
+N/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/main.o
+t1298952514
+s6304
+
+N/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app
+t1299507284
+s204
+
+N/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app.dSYM
+t1299507284
+s102
+
+N/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/CTNiceLibTest
+t1299507284
+s30128
+
+N/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/Info.plist
+t1298952513
+s615
+
+N/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/MainWindow.nib
+t1298952513
+s990
+
+N/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/PkgInfo
+t1298952513
+s8
+
+N/Users/calvintam/Projects/CTNiceLibTest/main.m
+c000000004D6C70270000000000000165
+t1298952231
+s357
+i<UIKit/UIKit.h>
+
+N/var/folders/cb/cbfhHt4uF48U3RKuz2TfmE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CTNiceLibTest_Prefix-cimrhwamyqwipnahcxgwowldicgm/CTNiceLibTest_Prefix.pch.gch
+t1298952514
+s15453392
+
+NCTNiceLibTest-Info.plist
+c000000004D6C7027000000000000038D
+t1298952231
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies321200084#321200084#0(0"0(0#1#0"32651513917735028#0"0#
+
+CCompileC build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLib.o /Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321200084.256222
+e321200084.433049
+r1
+xCompileC
+xbuild/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLib.o
+x/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m321200084#321200084#0(0"0(0#0#59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m8617326880#2063"    cd /Users/calvintam/Projects/CTNiceLibTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-generated-files.hmap -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-own-target-headers.hmap -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-all-target-headers.hmap -iquote /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-project-headers.hmap -F/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator -I/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/include -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/DerivedSources/i386 -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/DerivedSources -include /var/folders/cb/cbfhHt4uF48U3RKuz2TfmE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CTNiceLibTest_Prefix-cimrhwamyqwipnahcxgwowldicgm/CTNiceLibTest_Prefix.pch -c /Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m -o /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLib.o0#
+
+CCompileC build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLibTestAppDelegate.o /Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321200084.229525
+e321200084.365535
+r1
+xCompileC
+xbuild/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLibTestAppDelegate.o
+x/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m321200084#321200084#0(0"0(0#0#74"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m3347427302087748096#2093"    cd /Users/calvintam/Projects/CTNiceLibTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-generated-files.hmap -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-own-target-headers.hmap -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-all-target-headers.hmap -iquote /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-project-headers.hmap -F/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator -I/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/include -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/DerivedSources/i386 -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/DerivedSources -include /var/folders/cb/cbfhHt4uF48U3RKuz2TfmE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CTNiceLibTest_Prefix-cimrhwamyqwipnahcxgwowldicgm/CTNiceLibTest_Prefix.pch -c /Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m -o /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLibTestAppDelegate.o0#
+
+CCompileC build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/main.o /Users/calvintam/Projects/CTNiceLibTest/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320645314.472481
+e320645314.536947
+r1
+xCompileC
+xbuild/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/main.o
+x/Users/calvintam/Projects/CTNiceLibTest/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@54"Compile /Users/calvintam/Projects/CTNiceLibTest/main.m320645314#320645314#0(0"0(0#0#46"/Users/calvintam/Projects/CTNiceLibTest/main.m8649227200#2045"    cd /Users/calvintam/Projects/CTNiceLibTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-generated-files.hmap -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-own-target-headers.hmap -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-all-target-headers.hmap -iquote /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-project-headers.hmap -F/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator -I/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/include -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/DerivedSources/i386 -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/DerivedSources -include /var/folders/cb/cbfhHt4uF48U3RKuz2TfmE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CTNiceLibTest_Prefix-cimrhwamyqwipnahcxgwowldicgm/CTNiceLibTest_Prefix.pch -c /Users/calvintam/Projects/CTNiceLibTest/main.m -o /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/calvintam/Projects/CTNiceLibTest/MainWindow.xib
+s320645313.016223
+e320645313.363093
+r1
+xCompileXIB
+x/Users/calvintam/Projects/CTNiceLibTest/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib320645313#320645313#0(0"0(0#0#54"/Users/calvintam/Projects/CTNiceLibTest/MainWindow.xib8648365600#579"    cd /Users/calvintam/Projects/CTNiceLibTest    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/MainWindow.nib /Users/calvintam/Projects/CTNiceLibTest/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CGenerateDSYMFile /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app.dSYM /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/CTNiceLibTest
+s321200084.703357
+e321200084.762122
+r1
+xGenerateDSYMFile
+x/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app.dSYM
+x/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/CTNiceLibTest
+lSLF07#2@127"GenerateDSYMFile build/Debug-iphonesimulator/CTNiceLibTest.app.dSYM build/Debug-iphonesimulator/CTNiceLibTest.app/CTNiceLibTest321200084#321200084#0(0"0(0#0#99"/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/CTNiceLibTest8605455744#404"    cd /Users/calvintam/Projects/CTNiceLibTest    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/CTNiceLibTest -o /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app.dSYM0#
+
+CLd /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/CTNiceLibTest normal i386
+s321200084.433144
+e321200084.703262
+r1
+xLd
+x/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/CTNiceLibTest
+xnormal
+xi386
+lSLF07#2@104"Link /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/CTNiceLibTest321200084#321200084#0(0"0(0#0#0"8613669984#935"    cd /Users/calvintam/Projects/CTNiceLibTest    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator -F/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator -filelist /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLibTest.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/CTNiceLibTest0#
+
+CProcessInfoPlistFile /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/Info.plist CTNiceLibTest-Info.plist
+s320645313.009235
+e320645313.016023
+r1
+xProcessInfoPlistFile
+x/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/Info.plist
+xCTNiceLibTest-Info.plist
+lSLF07#2@32"Process CTNiceLibTest-Info.plist320645313#320645313#0(0"0(0#0#64"/Users/calvintam/Projects/CTNiceLibTest/CTNiceLibTest-Info.plist8636537856#500"    cd /Users/calvintam/Projects/CTNiceLibTest    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility CTNiceLibTest-Info.plist -genpkginfo /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/Info.plist0#
+
+CProcessPCH /var/folders/cb/cbfhHt4uF48U3RKuz2TfmE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CTNiceLibTest_Prefix-cimrhwamyqwipnahcxgwowldicgm/CTNiceLibTest_Prefix.pch.gch CTNiceLibTest_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s320645313.363225
+e320645314.472336
+r1
+xProcessPCH
+x/var/folders/cb/cbfhHt4uF48U3RKuz2TfmE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CTNiceLibTest_Prefix-cimrhwamyqwipnahcxgwowldicgm/CTNiceLibTest_Prefix.pch.gch
+xCTNiceLibTest_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@35"Precompile CTNiceLibTest_Prefix.pch320645313#320645314#0(0"0(0#0#64"/Users/calvintam/Projects/CTNiceLibTest/CTNiceLibTest_Prefix.pch8649617632#1930"    cd /Users/calvintam/Projects/CTNiceLibTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-generated-files.hmap -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-own-target-headers.hmap -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-all-target-headers.hmap -iquote /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-project-headers.hmap -F/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator -I/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/include -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/DerivedSources/i386 -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/DerivedSources -c /Users/calvintam/Projects/CTNiceLibTest/CTNiceLibTest_Prefix.pch -o /var/folders/cb/cbfhHt4uF48U3RKuz2TfmE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CTNiceLibTest_Prefix-cimrhwamyqwipnahcxgwowldicgm/CTNiceLibTest_Prefix.pch.gch0#
+
+CTouch /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app
+s321200084.762218
+e321200084.788606
+r1
+xTouch
+x/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app
+lSLF07#2@91"Touch /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app321200084#321200084#0(0"0(0#0#0"8604394400#286"    cd /Users/calvintam/Projects/CTNiceLibTest    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app0#
+

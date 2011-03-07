@@ -1,0 +1,5 @@
+CTNiceLibrary is a library for people that are not interested in meddling with difficult hierarchies and extensive planning, but to get down to work right away with coding for a functional prototype. 
+
+This does not means that CTNiceLibrary is not intended for real work, because it is definitely been optimized to the bones for efficiency with the added benefits of convenience and shorter codes.
+
+CTNiceLibrary has been used in various commercial application in the App Store. It's functions was inherited from legacy CTNiceArray functions, now with additional convenience for XML parsing and integrated parameter saving singleton capabilities.

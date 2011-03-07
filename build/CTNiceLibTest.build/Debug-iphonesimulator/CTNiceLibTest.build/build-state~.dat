@@ -1,0 +1,267 @@
+TCTNiceLibTest
+v7
+r0
+t320645314.588566
+cCheck dependencies
+cProcessInfoPlistFile /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/Info.plist CTNiceLibTest-Info.plist
+cCompileXIB /Users/calvintam/Projects/CTNiceLibTest/MainWindow.xib
+cProcessPCH /var/folders/cb/cbfhHt4uF48U3RKuz2TfmE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CTNiceLibTest_Prefix-cimrhwamyqwipnahcxgwowldicgm/CTNiceLibTest_Prefix.pch.gch CTNiceLibTest_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/main.o /Users/calvintam/Projects/CTNiceLibTest/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLibTestAppDelegate.o /Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLib.o /Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m normal i386 objective-c com.apple.compilers.gcc.4_2
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Users/calvintam/Projects/CTNiceLibTest/CTNiceLibTest_Prefix.pch
+c000000004D6C702700000000000000C3
+t1298952231
+s195
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m
+c000000004D6C6F420000000000001376
+t1298952002
+s4982
+i"CTNiceArray.h"
+
+N/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.h
+c000000004D6C7027000000000000014F
+t1298952231
+s335
+i<UIKit/UIKit.h>
+
+N/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m
+c000000004D6C713F0000000000000ADF
+t1298952511
+s2783
+i"CTNiceLibTestAppDelegate.h"
+
+N/Users/calvintam/Projects/CTNiceLibTest/MainWindow.xib
+c000000004D6C70270000000000002126
+t1298952231
+s8486
+
+N/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLib.o
+t2
+s0
+
+N/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLibTest.LinkFileList
+c000000004D6C714100000000000001AE
+t1298952513
+s430
+
+N/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLibTestAppDelegate.o
+t1298952514
+s50136
+
+N/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/main.o
+t1298952514
+s6304
+
+N/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app
+t2
+s0
+
+N/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app.dSYM
+t2
+s0
+
+N/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/CTNiceLibTest
+t2
+s0
+
+N/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/Info.plist
+t1298952513
+s615
+
+N/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/MainWindow.nib
+t1298952513
+s990
+
+N/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/PkgInfo
+t1298952513
+s8
+
+N/Users/calvintam/Projects/CTNiceLibTest/main.m
+c000000004D6C70270000000000000165
+t1298952231
+s357
+i<UIKit/UIKit.h>
+
+N/var/folders/cb/cbfhHt4uF48U3RKuz2TfmE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CTNiceLibTest_Prefix-cimrhwamyqwipnahcxgwowldicgm/CTNiceLibTest_Prefix.pch.gch
+t1298952514
+s15453392
+
+NCTNiceLibTest-Info.plist
+c000000004D6C7027000000000000038D
+t1298952231
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies320645312#320645313#0(0"0(0#1#0"8639679136#0"0#
+
+CCompileC build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLib.o /Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320645314.474714
+e320645314.588487
+r0
+xCompileC
+xbuild/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLib.o
+x/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:9:24: error: CTNiceArray.h: No such file or directory
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:11: error: expected '=', ',', ';', 'asm' or '__attribute__' before '*' token
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '+[NSArray(CTNiceArray) arrayWithXMLFrom:tag:]':
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:14: warning: 'NSArray' may not respond to '+arrayWithStringsFrom:prefix:suffix:'
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:14: warning: (Messages without a matching method signature
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:14: warning: will be assumed to return 'id' and accept
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:14: warning: '...' as arguments.)
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[NSArray(CTNiceArray) saveAs:]':
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:33: error: 'File' undeclared (first use in this function)
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:33: error: (Each undeclared identifier is reported only once
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:33: error: for each function it appears in.)
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[NSArray(CTNiceArray) loadFrom:]':
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:36: error: 'File' undeclared (first use in this function)
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '+[NSArray(CTNiceArray) loadFrom:]':
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:39: error: 'File' undeclared (first use in this function)
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:40: warning: control reaches end of non-void function
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '+[NSString(CTNiceString) stringBetweenXMLFrom:tag:]':
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:44: warning: 'NSString' may not respond to '+stringBetweenStringFrom:prefix:suffix:'
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[NSString(CTNiceString) arrayWithXMLTag:]':
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:52: warning: 'NSArray' may not respond to '+arrayWithXMLFrom:tag:'
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[NSString(CTNiceString) arrayWithStringBetweenPrefix:suffix:]':
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:55: warning: 'NSArray' may not respond to '+arrayWithStringsFrom:prefix:suffix:'
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[NSString(CTNiceString) saveAs:]':
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:58: error: 'File' undeclared (first use in this function)
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[NSString(CTNiceString) loadFrom:]':
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:61: error: 'File' undeclared (first use in this function)
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '+[NSString(CTNiceString) loadFrom:]':
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:64: error: 'File' undeclared (first use in this function)
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:65: warning: control reaches end of non-void function
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: At top level:
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:69: warning: cannot find interface declaration for 'File'
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '+[File sharedFile]':
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:73: error: 'sharedFile' undeclared (first use in this function)
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:74: warning: 'File' may not respond to '+alloc'
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:78: warning: control reaches end of non-void function
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '+[File allocWithZone:]':
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:83: error: 'sharedFile' undeclared (first use in this function)
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:84: error: no super class declared in @interface for 'File'
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[File init]':
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:115: error: no super class declared in @interface for 'File'
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:120: error: 'dict' undeclared (first use in this function)
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[File saveObject:Key:]':
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:130: error: 'dict' undeclared (first use in this function)
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[File getObject:]':
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:137: error: 'dict' undeclared (first use in this function)
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:138: warning: control reaches end of non-void function
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[File allValues:]':
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:143: error: 'dict' undeclared (first use in this function)
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:144: warning: control reaches end of non-void function
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[File dealloc]':
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:147: error: 'dict' undeclared (first use in this function)
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:150: error: no super class declared in @interface for 'File'
+lSLF07#2@67"Compile /Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320645314#320645314#0(5980"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:9:24: error: CTNiceArray.h: No such file or directory/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:11: error: expected '=', ',', ';', 'asm' or '__attribute__' before '*' token/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '+[NSArray(CTNiceArray) arrayWithXMLFrom:tag:]':/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:14: warning: 'NSArray' may not respond to '+arrayWithStringsFrom:prefix:suffix:'/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:14: warning: (Messages without a matching method signature/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:14: warning: will be assumed to return 'id' and accept/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:14: warning: '...' as arguments.)/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[NSArray(CTNiceArray) saveAs:]':/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:33: error: 'File' undeclared (first use in this function)/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:33: error: (Each undeclared identifier is reported only once/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:33: error: for each function it appears in.)/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[NSArray(CTNiceArray) loadFrom:]':/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:36: error: 'File' undeclared (first use in this function)/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '+[NSArray(CTNiceArray) loadFrom:]':/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:39: error: 'File' undeclared (first use in this function)/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:40: warning: control reaches end of non-void function/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '+[NSString(CTNiceString) stringBetweenXMLFrom:tag:]':/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:44: warning: 'NSString' may not respond to '+stringBetweenStringFrom:prefix:suffix:'/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[NSString(CTNiceString) arrayWithXMLTag:]':/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:52: warning: 'NSArray' may not respond to '+arrayWithXMLFrom:tag:'/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[NSString(CTNiceString) arrayWithStringBetweenPrefix:suffix:]':/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:55: warning: 'NSArray' may not respond to '+arrayWithStringsFrom:prefix:suffix:'/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[NSString(CTNiceString) saveAs:]':/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:58: error: 'File' undeclared (first use in this function)/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[NSString(CTNiceString) loadFrom:]':/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:61: error: 'File' undeclared (first use in this function)/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '+[NSString(CTNiceString) loadFrom:]':/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:64: error: 'File' undeclared (first use in this function)/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:65: warning: control reaches end of non-void function/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: At top level:/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:69: warning: cannot find interface declaration for 'File'/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '+[File sharedFile]':/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:73: error: 'sharedFile' undeclared (first use in this function)/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:74: warning: 'File' may not respond to '+alloc'/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:78: warning: control reaches end of non-void function/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '+[File allocWithZone:]':/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:83: error: 'sharedFile' undeclared (first use in this function)/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:84: error: no super class declared in @interface for 'File'/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[File init]':/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:115: error: no super class declared in @interface for 'File'/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:120: error: 'dict' undeclared (first use in this function)/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[File saveObject:Key:]':/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:130: error: 'dict' undeclared (first use in this function)/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[File getObject:]':/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:137: error: 'dict' undeclared (first use in this function)/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:138: warning: control reaches end of non-void function/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[File allValues:]':/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:143: error: 'dict' undeclared (first use in this function)/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:144: warning: control reaches end of non-void function/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m: In function '-[File dealloc]':/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:147: error: 'dict' undeclared (first use in this function)/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m:150: error: no super class declared in @interface for 'File'31(4@40"CTNiceArray.h: No such file or directory320645314#0#114#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#9#0#9#0#28"*: No such file or directory0(4@65"Expected '=', ',', ';', 'asm' or '__attribute__' before '*' token320645314#114#137#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#11#0#11#0#19"expected * before *0(22@67"'NSArray' may not respond to '+arrayWithStringsFrom:prefix:suffix:'320645314#373#141#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#14#0#14#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)320645314#514#119#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#14#0#14#0#0"0(4@46"'File' undeclared (first use in this function)320645314#950#118#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#33#0#33#0#43"'*' undeclared (first use in this function)0(4@46"'File' undeclared (first use in this function)320645314#1404#118#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#36#0#36#0#43"'*' undeclared (first use in this function)0(4@46"'File' undeclared (first use in this function)320645314#1632#118#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#39#0#39#0#43"'*' undeclared (first use in this function)0(22@40"Control reaches end of non-void function320645314#1750#114#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#40#0#40#0#40"control reaches end of non-void function0(22@71"'NSString' may not respond to '+stringBetweenStringFrom:prefix:suffix:'320645314#1992#145#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#44#0#44#0#26"'*' may not respond to '*'0(22@53"'NSArray' may not respond to '+arrayWithXMLFrom:tag:'320645314#2256#127#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#52#0#52#0#26"'*' may not respond to '*'0(22@67"'NSArray' may not respond to '+arrayWithStringsFrom:prefix:suffix:'320645314#2522#141#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#55#0#55#0#26"'*' may not respond to '*'0(4@46"'File' undeclared (first use in this function)320645314#2773#118#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#58#0#58#0#43"'*' undeclared (first use in this function)0(4@46"'File' undeclared (first use in this function)320645314#3003#118#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#61#0#61#0#43"'*' undeclared (first use in this function)0(4@46"'File' undeclared (first use in this function)320645314#3233#118#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#64#0#64#0#43"'*' undeclared (first use in this function)0(22@40"Control reaches end of non-void function320645314#3351#114#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#65#0#65#0#40"control reaches end of non-void function0(23@13"At top level:320645314#3465#75#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#0#0#0#0#0"0(22@44"Cannot find interface declaration for 'File'320645314#3540#118#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#69#0#69#0#0"0(4@52"'sharedFile' undeclared (first use in this function)320645314#3753#124#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#73#0#73#0#43"'*' undeclared (first use in this function)0(22@34"'File' may not respond to '+alloc'320645314#3877#108#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#74#0#74#0#26"'*' may not respond to '*'0(22@40"Control reaches end of non-void function320645314#3985#114#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#78#0#78#0#40"control reaches end of non-void function0(4@52"'sharedFile' undeclared (first use in this function)320645314#4198#124#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#83#0#83#0#43"'*' undeclared (first use in this function)0(4@48"No super class declared in @interface for 'File'320645314#4322#120#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#84#0#84#0#0"0(4@48"No super class declared in @interface for 'File'320645314#4531#121#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#115#0#115#0#0"0(4@46"'dict' undeclared (first use in this function)320645314#4652#119#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#120#0#120#0#43"'*' undeclared (first use in this function)0(4@46"'dict' undeclared (first use in this function)320645314#4871#119#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#130#0#130#0#43"'*' undeclared (first use in this function)0(4@46"'dict' undeclared (first use in this function)320645314#5085#119#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#137#0#137#0#43"'*' undeclared (first use in this function)0(22@40"Control reaches end of non-void function320645314#5204#115#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#138#0#138#0#40"control reaches end of non-void function0(4@46"'dict' undeclared (first use in this function)320645314#5414#119#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#143#0#143#0#43"'*' undeclared (first use in this function)0(22@40"Control reaches end of non-void function320645314#5533#115#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#144#0#144#0#40"control reaches end of non-void function0(4@46"'dict' undeclared (first use in this function)320645314#5740#119#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#147#0#147#0#43"'*' undeclared (first use in this function)0(4@48"No super class declared in @interface for 'File'320645314#5859#121#0(6@59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m320644802#150#0#150#0#0"0(0#0#59"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m8648965760#2063"    cd /Users/calvintam/Projects/CTNiceLibTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-generated-files.hmap -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-own-target-headers.hmap -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-all-target-headers.hmap -iquote /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-project-headers.hmap -F/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator -I/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/include -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/DerivedSources/i386 -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/DerivedSources -include /var/folders/cb/cbfhHt4uF48U3RKuz2TfmE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CTNiceLibTest_Prefix-cimrhwamyqwipnahcxgwowldicgm/CTNiceLibTest_Prefix.pch -c /Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLib.m -o /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLib.o1#
+
+CCompileC build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLibTestAppDelegate.o /Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320645314.473678
+e320645314.562225
+r1
+xCompileC
+xbuild/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLibTestAppDelegate.o
+x/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m: In function '-[CTNiceLibTestAppDelegate application:didFinishLaunchingWithOptions:]':
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m:28: warning: 'NSString' may not respond to '-arrayWithXMLTag:'
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m:28: warning: (Messages without a matching method signature
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m:28: warning: will be assumed to return 'id' and accept
+o/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m:28: warning: '...' as arguments.)
+lSLF07#2@82"Compile /Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m320645314#320645314#0(673"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m: In function '-[CTNiceLibTestAppDelegate application:didFinishLaunchingWithOptions:]':/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m:28: warning: 'NSString' may not respond to '-arrayWithXMLTag:'/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m:28: warning: (Messages without a matching method signature/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m:28: warning: will be assumed to return 'id' and accept/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m:28: warning: '...' as arguments.)2(22@49"'NSString' may not respond to '-arrayWithXMLTag:'320645314#162#138#0(6@74"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m320645311#28#0#28#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)320645314#300#134#0(6@74"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m320645311#28#0#28#0#0"0(0#0#74"/Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m8646196704#2093"    cd /Users/calvintam/Projects/CTNiceLibTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-generated-files.hmap -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-own-target-headers.hmap -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-all-target-headers.hmap -iquote /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-project-headers.hmap -F/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator -I/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/include -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/DerivedSources/i386 -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/DerivedSources -include /var/folders/cb/cbfhHt4uF48U3RKuz2TfmE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CTNiceLibTest_Prefix-cimrhwamyqwipnahcxgwowldicgm/CTNiceLibTest_Prefix.pch -c /Users/calvintam/Projects/CTNiceLibTest/Classes/CTNiceLibTestAppDelegate.m -o /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/CTNiceLibTestAppDelegate.o0#
+
+CCompileC build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/main.o /Users/calvintam/Projects/CTNiceLibTest/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320645314.472481
+e320645314.536947
+r1
+xCompileC
+xbuild/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/main.o
+x/Users/calvintam/Projects/CTNiceLibTest/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@54"Compile /Users/calvintam/Projects/CTNiceLibTest/main.m320645314#320645314#0(0"0(0#0#46"/Users/calvintam/Projects/CTNiceLibTest/main.m8649227200#2045"    cd /Users/calvintam/Projects/CTNiceLibTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-generated-files.hmap -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-own-target-headers.hmap -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-all-target-headers.hmap -iquote /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-project-headers.hmap -F/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator -I/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/include -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/DerivedSources/i386 -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/DerivedSources -include /var/folders/cb/cbfhHt4uF48U3RKuz2TfmE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CTNiceLibTest_Prefix-cimrhwamyqwipnahcxgwowldicgm/CTNiceLibTest_Prefix.pch -c /Users/calvintam/Projects/CTNiceLibTest/main.m -o /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/calvintam/Projects/CTNiceLibTest/MainWindow.xib
+s320645313.016223
+e320645313.363093
+r1
+xCompileXIB
+x/Users/calvintam/Projects/CTNiceLibTest/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib320645313#320645313#0(0"0(0#0#54"/Users/calvintam/Projects/CTNiceLibTest/MainWindow.xib8648365600#579"    cd /Users/calvintam/Projects/CTNiceLibTest    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/MainWindow.nib /Users/calvintam/Projects/CTNiceLibTest/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CGenerateDSYMFile /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app.dSYM /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/CTNiceLibTest
+r0
+
+CLd /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/CTNiceLibTest normal i386
+r0
+
+CProcessInfoPlistFile /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/Info.plist CTNiceLibTest-Info.plist
+s320645313.009235
+e320645313.016023
+r1
+xProcessInfoPlistFile
+x/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/Info.plist
+xCTNiceLibTest-Info.plist
+lSLF07#2@32"Process CTNiceLibTest-Info.plist320645313#320645313#0(0"0(0#0#64"/Users/calvintam/Projects/CTNiceLibTest/CTNiceLibTest-Info.plist8636537856#500"    cd /Users/calvintam/Projects/CTNiceLibTest    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility CTNiceLibTest-Info.plist -genpkginfo /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app/Info.plist0#
+
+CProcessPCH /var/folders/cb/cbfhHt4uF48U3RKuz2TfmE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CTNiceLibTest_Prefix-cimrhwamyqwipnahcxgwowldicgm/CTNiceLibTest_Prefix.pch.gch CTNiceLibTest_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s320645313.363225
+e320645314.472336
+r1
+xProcessPCH
+x/var/folders/cb/cbfhHt4uF48U3RKuz2TfmE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CTNiceLibTest_Prefix-cimrhwamyqwipnahcxgwowldicgm/CTNiceLibTest_Prefix.pch.gch
+xCTNiceLibTest_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@35"Precompile CTNiceLibTest_Prefix.pch320645313#320645314#0(0"0(0#0#64"/Users/calvintam/Projects/CTNiceLibTest/CTNiceLibTest_Prefix.pch8649617632#1930"    cd /Users/calvintam/Projects/CTNiceLibTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-generated-files.hmap -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-own-target-headers.hmap -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-all-target-headers.hmap -iquote /Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/CTNiceLibTest-project-headers.hmap -F/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator -I/Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/include -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/DerivedSources/i386 -I/Users/calvintam/Projects/CTNiceLibTest/build/CTNiceLibTest.build/Debug-iphonesimulator/CTNiceLibTest.build/DerivedSources -c /Users/calvintam/Projects/CTNiceLibTest/CTNiceLibTest_Prefix.pch -o /var/folders/cb/cbfhHt4uF48U3RKuz2TfmE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CTNiceLibTest_Prefix-cimrhwamyqwipnahcxgwowldicgm/CTNiceLibTest_Prefix.pch.gch0#
+
+CTouch /Users/calvintam/Projects/CTNiceLibTest/build/Debug-iphonesimulator/CTNiceLibTest.app
+r0
+
