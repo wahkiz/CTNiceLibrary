@@ -5,8 +5,11 @@
 //  Revised from CTNiceArray 2010 Calvin Tam.
 
 #import <UIKit/UIKit.h>
-
+@interface NSMutableArray(CTNiceArray)
+- (int)intAtIndex:(int)index;
+@end
 @interface NSArray(CTNiceArray)
+- (int)intAtIndex:(int)index;
 +(NSArray *)arrayWithXMLFrom:(NSString *)source tag:(NSString *)t;
 +(NSArray *)arrayWithStringsFrom:(NSString *)source prefix:(NSString *)f suffix:(NSString *)t;
 - (void)saveAs:(NSString *)tag;
@@ -30,6 +33,12 @@
 - (NSDictionary *)dictionaryWithContentsOfXMLTags;
 + (NSString *)loadFrom:(NSString *)tag;
 @end
+@interface NSDictionary (CTNiceDictionary)
+- (int)intForKey:(id)key;
+@end
+@interface NSMutableDictionary (CTNiceDictionary)
+- (int)intForKey:(id)key;
+@end
 @interface File : NSObject {
 	NSMutableDictionary *dict;
 }
@@ -38,4 +47,8 @@
 -(id) getObject:(NSString *)key;
 -(void) removeAllData;
 -(NSArray*) allValues:(NSUInteger*)i;
+@end
+@interface UILabel (VerticalAlign)
+- (void)alignTop;
+- (void)alignBottom;
 @end

@@ -9,7 +9,15 @@
 #define filepath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) objectAtIndex:0]
 #define TAGS [@"UDID,DEVICENAME,SYSTEMNAME,SYSTEMVERSION,MODEL" toArray]
 static File *sharedFile = nil;
+@implementation NSMutableArray(CTNiceArray)
+- (int)intAtIndex:(int)index {
+    return [[self objectAtIndex:index] intValue];
+}
+@end
 @implementation NSArray(CTNiceArray)
+- (int)intAtIndex:(int)index {
+    return [[self objectAtIndex:index] intValue];
+}
 +(NSArray *)arrayWithXMLFrom:(NSString *)source tag:(NSString *)t {
 	return [self arrayWithStringsFrom:source prefix:[NSString stringWithFormat:@"<%@>",t] suffix:[NSString stringWithFormat:@"</%@>",t]];
 }
@@ -18,7 +26,7 @@ static File *sharedFile = nil;
 	NSRange newRange = NSMakeRange(-1, 0);
 	NSRange endPoint = [source rangeOfString:f options:(NSCaseInsensitiveSearch,NSBackwardsSearch) range:NSMakeRange(newRange.location+1, [source length]-newRange.location-1)];
 	if(endPoint.location==NSNotFound)
-		NSLog(@"String not found");
+		NSLog(@"String not found, source : %@",source);
 	else
 		for(;;) {
 			newRange = [source rangeOfString:f options:(NSCaseInsensitiveSearch) range:NSMakeRange(newRange.location+1, [source length]-newRange.location-1)];
@@ -51,6 +59,16 @@ static File *sharedFile = nil;
 	return [[File sharedFile] getObject:tag];
 }
 @end
+@implementation NSDictionary(CTNiceDictionary)
+- (int)intForKey:(id)key {
+    return [[self objectForKey:key] intValue];
+}
+@end
+@implementation NSMutableDictionary(CTNiceDictionary)
+- (int)intForKey:(id)key {
+    return [[self objectForKey:key] intValue];
+}
+@end
 @implementation NSString(CTNiceString)
 +(NSString *)stringBetweenXMLFrom:(NSString *)source tag:(NSString *)t {
 	return [self stringBetweenStringFrom:source prefix:[NSString stringWithFormat:@"<%@>",t] suffix:[NSString stringWithFormat:@"</%@>",t]];
@@ -61,7 +79,11 @@ static File *sharedFile = nil;
 +(NSString *)stringBetweenStringFrom:(NSString *)source prefix:(NSString *)f suffix:(NSString *)t {
 	NSRange newRange = [source rangeOfString:f options:(NSCaseInsensitiveSearch) range:NSMakeRange(0, [source length])];
 	NSRange backside = [source rangeOfString:t options:(NSCaseInsensitiveSearch) range:NSMakeRange(newRange.location+1, [source length]-newRange.location-1)];
-	return [source substringWithRange:NSMakeRange(newRange.location+newRange.length, backside.location-(newRange.location+newRange.length))];
+    if(backside.location==NSNotFound)
+		return @"";
+	else
+        return [source substringWithRange:NSMakeRange(newRange.location+newRange.length, backside.location-(newRange.location+newRange.length))];
+    return @"";
 }
 - (NSArray *)toArray {
 	return [self componentsSeparatedByString:@","];
@@ -108,7 +130,10 @@ static File *sharedFile = nil;
 		if(val!=nil){
 			self = [self stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"[tag:%@]",[tags objectAtIndex:x]]
 												   withString:val];	
-		}
+		} else {
+            [self stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"[tag:%@]",[tags objectAtIndex:x]]
+                                            withString:@""]; //Replaces the tag as an empty string, denotes empty storage
+        }
 		
 	}
 	
@@ -239,5 +264,27 @@ static File *sharedFile = nil;
 	dict = nil;	
 	
 	[super dealloc];
+}
+@end
+
+@implementation UILabel (VerticalAlign)
+- (void)alignTop {
+    CGSize fontSize = [self.text sizeWithFont:self.font];
+    double finalHeight = fontSize.height * self.numberOfLines;
+    double finalWidth = self.frame.size.width;    //expected width of label
+    CGSize theStringSize = [self.text sizeWithFont:self.font constrainedToSize:CGSizeMake(finalWidth, finalHeight) lineBreakMode:self.lineBreakMode];
+    int newLinesToPad = (finalHeight  - theStringSize.height) / fontSize.height;
+    for(int i=0; i<newLinesToPad; i++)
+        self.text = [self.text stringByAppendingString:@"\n "];
+}
+
+- (void)alignBottom {
+    CGSize fontSize = [self.text sizeWithFont:self.font];
+    double finalHeight = fontSize.height * self.numberOfLines;
+    double finalWidth = self.frame.size.width;    //expected width of label
+    CGSize theStringSize = [self.text sizeWithFont:self.font constrainedToSize:CGSizeMake(finalWidth, finalHeight) lineBreakMode:self.lineBreakMode];
+    int newLinesToPad = (finalHeight  - theStringSize.height) / fontSize.height;
+    for(int i=0; i<newLinesToPad; i++)
+        self.text = [NSString stringWithFormat:@" \n%@",self.text];
 }
 @end
