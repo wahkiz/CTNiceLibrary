@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
     // Override point for customization after application launch.
-    
+    alphaDurationVal = 0.5f;
     [self.window makeKeyAndVisible];
     
 	//Testing Parse XML
@@ -50,8 +50,8 @@
 	NSLog(@"Load from tag 'TestArray' : %@",[NSArray loadFrom:@"TestArray"]);
 	
 	//Traditional file save also works
-	[[File sharedFile] saveObject:[NSString stringWithFormat:@"Test Saving 2"] Key:@"Testing2"];
-	NSLog(@"Load from tag 'Testing2' : %@",[[File sharedFile] getObject:@"Testing2"]);
+	[[Utilities sharedUtilities] saveObject:[NSString stringWithFormat:@"Test Saving 2"] Key:@"Testing2"];
+	NSLog(@"Load from tag 'Testing2' : %@",[[Utilities sharedUtilities] getObject:@"Testing2"]);
 	
 	//A simpler way to declare arrays
 	NSLog(@"Declaring Array using String : %@",[@"A,B,C,D,E" toArray]);
@@ -61,10 +61,63 @@
 	
 	//Tags also include System Data
 	NSLog(@"System data in tags :\n %@", [@"UDID : [tag:UDID]\n Name : [tag:DEVICENAME]\n System : [tag:SYSTEMNAME] [tag:SYSTEMVERSION]\n Model : [tag:MODEL]" string]);
+    
+    //It is possible to add many observers at a time
+    [[NSNotificationCenter defaultCenter] addObserver:self selectors:[@"toggleViewVisibility:,alphaDuration:,setViewFrame:,toggleSlideView:" toArray] names:[@"toggleViewVisibility,alphaDuration,setViewFrame,toggleSlideView" toArray]];
     return YES;
 }
 
-
+- (IBAction)doSetframe:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"setViewFrame" object:nil]; //Send a notification
+}
+- (IBAction)toggleVisibility {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"toggleViewVisibility" object:nil]; //Send a notification
+}
+- (IBAction)durationChanged:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"alphaDuration" object:[NSString stringWithFormat:@"%0.2f",((UISlider *)sender).value]]; //Send a notification with slider value
+}
+- (IBAction)toggleSlide:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"toggleSlideView" object:nil]; //Send a notification
+}
+- (void)setViewFrame:(NSNotification *)note {
+    if(testView.frame.size.width!=200){
+        //Default size
+        [[NSString stringWithFormat:@"%0.f,%0.f,%0.f,%0.f",testView.frame.origin.x,testView.frame.origin.y,testView.frame.size.width,testView.frame.size.height] saveAs:@"defaultFrame"];
+        //[testView setFrame:CGRectMake(50, 50, 200, 200) withDuration:0.5f animateFinish:nil delegate:nil];
+        [testView setFrame:CGRectMake(50, 50, 200, 200) withDuration:0.5f];
+    } else {
+        //Set to default
+        NSArray *defaultFrame = [[NSString loadFrom:@"defaultFrame"] componentsSeparatedByString:@","];
+        [testView setFrame:CGRectMake([defaultFrame intAtIndex:0],[defaultFrame intAtIndex:1],[defaultFrame intAtIndex:2],[defaultFrame intAtIndex:3]) withDuration:0.5f];
+    }
+}
+- (void)toggleViewVisibility:(NSNotification *)note {
+    //This is a notification
+    //[testView setAlpha:testView.alpha==0 ? 1 : 0 withDuration:alphaDurationVal animateFinish:nil delegate:nil]; //Use if require to call function after animation
+    [testView setAlpha:testView.alpha==0 ? 1 : 0 withDuration:alphaDurationVal];
+}
+- (void)alphaDuration:(NSNotification *)note {
+    [alphaDurationDisplay setText:[NSString stringWithFormat:@"Duration : %0.2f",[[note object] floatValue]]];
+    alphaDurationVal = [[note object] floatValue];
+}
+- (void)toggleSlideView:(NSNotification *)note {
+    //[testSlideView setHidden:NO withDuration:0.3f];
+    if(!testSlideView.hidden){
+        //If slideview is not hidden, we should slide it out of the view
+        //We should save it's initial position in pop out state. 
+        [[NSString stringWithFormat:@"%0.f,%0.f,%0.f,%0.f",testSlideView.frame.origin.x,testSlideView.frame.origin.y,testSlideView.frame.size.width,testSlideView.frame.size.height] saveAs:@"defaultSlideFrame"];
+        [testSlideView animatePopBack:CTPopOutDirectionRight withDuration:0.5f animateFinish:@selector(resetPosition) delegate:self];
+    } else {
+        [testSlideView setHidden:NO];
+        [testSlideView animatePopOut:CTPopOutDirectionRight withDuration:0.5f];
+    }
+}
+- (void)resetPosition {
+    //TestSlideView is hidden and placed back to original position
+    [testSlideView setHidden:YES];
+    NSArray *defaultFrame = [[NSString loadFrom:@"defaultSlideFrame"] componentsSeparatedByString:@","];
+    [testSlideView setFrame:CGRectMake([defaultFrame intAtIndex:0],[defaultFrame intAtIndex:1],[defaultFrame intAtIndex:2],[defaultFrame intAtIndex:3]) withDuration:0.5f];
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     /*
      Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

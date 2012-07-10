@@ -10,8 +10,14 @@
 #import "CTNiceLib.h"
 @interface CTNiceLibTestAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
+    IBOutlet UIView *testView, *testSlideView;
+    IBOutlet UILabel *alphaDurationDisplay;
+    float alphaDurationVal;
 }
-
+- (IBAction)toggleSlide:(id)sender;
+- (IBAction)toggleVisibility;
+- (IBAction)durationChanged:(id)sender;
+- (IBAction)doSetframe:(id)sender;
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
 @end

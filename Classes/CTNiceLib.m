@@ -6,9 +6,80 @@
 
 
 #import "CTNiceLib.h"
-#define filepath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) objectAtIndex:0]
+#define FILEPATH [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) objectAtIndex:0]
 #define TAGS [@"UDID,DEVICENAME,SYSTEMNAME,SYSTEMVERSION,MODEL" toArray]
-static File *sharedFile = nil;
+static CGFloat bounceDuration = 0.3;
+static Utilities *sharedUtilities = nil;
+@implementation NSNotificationCenter (Extensions)
+- (void)addObserver:(id)observer selectors:(NSArray *)mSelector names:(NSArray *)mName {
+    for(int x=0;x<[mSelector count];x++){
+        SEL currentSelector = NSSelectorFromString([mSelector objectAtIndex:x]);
+        NSString *currentName = [mName objectAtIndex:x];
+        [self addObserver:observer selector:currentSelector name:currentName object:nil];
+    }
+}
+- (void)removeObserver:(id)observer names:(NSArray *)mName {
+    for(NSString *aName in mName)
+        [self removeObserver:observer name:aName object:nil];
+}
+@end
+@implementation UIView(CTShortcuts)
+- (UILabel *)asLabel {
+    return (UILabel *)self;
+}
+- (UIImageView *)asImageView {
+    return (UIImageView *)self;
+}
+- (UITextField *)asTextField {
+    return (UITextField *)self;
+}
+- (UIButton *)asButton {
+    return (UIButton *)self;
+}
+- (void)setAlpha:(CGFloat)alpha withDuration:(NSTimeInterval)duration {
+    [self setAlpha:alpha withDuration:duration animateFinish:nil delegate:nil];
+}
+- (void)setAlpha:(CGFloat)alpha withDuration:(NSTimeInterval)duration animateFinish:(SEL)selector delegate:(id)del {
+    [UIView beginAnimations:@"Frame Animation" context:nil];
+    [UIView setAnimationDuration:duration];
+    [UIView setAnimationDelegate:del];
+    [UIView setAnimationDidStopSelector:selector];
+    [self setAlpha:alpha];
+    [UIView commitAnimations];
+}
+- (void)setFrame:(CGRect)frame withDuration:(NSTimeInterval)duration {
+    [self setFrame:frame withDuration:duration animateFinish:nil delegate:nil];
+}
+- (void)setFrame:(CGRect)frame withDuration:(NSTimeInterval)duration animateFinish:(SEL)selector delegate:(id)del {
+    [UIView beginAnimations:@"Frame Animation" context:nil];
+    [UIView setAnimationDuration:duration];
+    [UIView setAnimationDelegate:del];
+    [UIView setAnimationDidStopSelector:selector];
+    [self setFrame:frame];
+    [UIView commitAnimations];
+}
+- (void)setHidden:(BOOL)hidden withDuration:(NSTimeInterval)duration {
+    [UIView beginAnimations:@"Frame Animation" context:nil];
+    [UIView setAnimationDuration:duration];
+    [self setAlpha:hidden ? 0 : 1];
+    [UIView commitAnimations];
+}
+- (void)animatePopOut:(CTPopOutDirection)direction withDuration:(NSTimeInterval)duration {
+    [self animatePopOut:direction withDuration:duration animateFinish:nil delegate:nil];
+}
+- (void)animatePopOut:(CTPopOutDirection)direction withDuration:(NSTimeInterval)duration animateFinish:(SEL)selector delegate:(id)del {
+    CGRect prevPos = self.frame;
+    [self setFrame:CGRectMake(prevPos.origin.x + (direction==CTPopOutDirectionLeft ? - prevPos.size.width  : direction==CTPopOutDirectionRight ? prevPos.size.width : 0 ), prevPos.origin.y + (direction==CTPopOutDirectionTop ? - prevPos.size.height  : direction==CTPopOutDirectionBottom ? prevPos.size.height : 0 ), prevPos.size.width, prevPos.size.height)];
+    [self setFrame:prevPos withDuration:duration animateFinish:selector delegate:del];
+}
+- (void)animatePopBack:(CTPopOutDirection)direction withDuration:(NSTimeInterval)duration {
+    [self animatePopBack:direction withDuration:duration animateFinish:nil delegate:nil];
+}
+- (void)animatePopBack:(CTPopOutDirection)direction withDuration:(NSTimeInterval)duration animateFinish:(SEL)selector delegate:(id)del {
+    CGRect prevPos = self.frame;
+    [self setFrame:CGRectMake((direction==CTPopOutDirectionLeft ? - prevPos.size.width  : direction==CTPopOutDirectionRight ? self.superview.frame.size.width+prevPos.size.width : 0 ), prevPos.origin.y + (direction==CTPopOutDirectionTop ? - prevPos.size.height  : direction==CTPopOutDirectionBottom ? self.superview.frame.size.height+prevPos.size.height : 0 ), prevPos.size.width, prevPos.size.height) withDuration:duration animateFinish:selector delegate:del]; 
+}
+@end
 @implementation NSMutableArray(CTNiceArray)
 - (int)intAtIndex:(int)index {
     return [[self objectAtIndex:index] intValue];
@@ -24,9 +95,9 @@ static File *sharedFile = nil;
 +(NSArray *)arrayWithStringsFrom:(NSString *)source prefix:(NSString *)f suffix:(NSString *)t {
 	NSMutableArray *temp = [NSMutableArray arrayWithCapacity:10];
 	NSRange newRange = NSMakeRange(-1, 0);
-	NSRange endPoint = [source rangeOfString:f options:(NSCaseInsensitiveSearch,NSBackwardsSearch) range:NSMakeRange(newRange.location+1, [source length]-newRange.location-1)];
+	NSRange endPoint = [source rangeOfString:f options:(NSBackwardsSearch) range:NSMakeRange(newRange.location+1, [source length]-newRange.location-1)];
 	if(endPoint.location==NSNotFound)
-		NSLog(@"String not found, source : %@",source);
+		NSLog(@"[CTNiceLib] (%@,%@) not found in %@",f,t,source);
 	else
 		for(;;) {
 			newRange = [source rangeOfString:f options:(NSCaseInsensitiveSearch) range:NSMakeRange(newRange.location+1, [source length]-newRange.location-1)];
@@ -50,13 +121,13 @@ static File *sharedFile = nil;
 	return self;	
 }
 - (void)saveAs:(NSString *)tag {
-	[[File sharedFile] saveObject:self Key:tag];
+	[[Utilities sharedUtilities] saveObject:self Key:tag];
 }
 - (void)loadFrom:(NSString *)tag {
-	self = [[File sharedFile] getObject:tag];
+	self = [[Utilities sharedUtilities] getObject:tag];
 }
 + (NSString *)loadFrom:(NSString *)tag {
-	return [[File sharedFile] getObject:tag];
+	return [[Utilities sharedUtilities] getObject:tag];
 }
 @end
 @implementation NSDictionary(CTNiceDictionary)
@@ -70,6 +141,10 @@ static File *sharedFile = nil;
 }
 @end
 @implementation NSString(CTNiceString)
+- (void)delegate:(id)delegate delay:(NSTimeInterval)duration {
+    SEL currentSelector = NSSelectorFromString(self);
+    [delegate performSelector:currentSelector withObject:nil afterDelay:duration];
+}
 +(NSString *)stringBetweenXMLFrom:(NSString *)source tag:(NSString *)t {
 	return [self stringBetweenStringFrom:source prefix:[NSString stringWithFormat:@"<%@>",t] suffix:[NSString stringWithFormat:@"</%@>",t]];
 }
@@ -94,7 +169,7 @@ static File *sharedFile = nil;
 		//Only Do Operation if both replace and to be replaced is same.
 		for(int x=0;x<[items count];x++){
 			rep = ([[replaceItems objectAtIndex:x] hasPrefix:@"[tag:"]) ? 
-			[[File sharedFile] getObject:[[replaceItems objectAtIndex:x] stringInBetweenPrefix:@"[tag:" suffix:@"]"]] :
+			[[Utilities sharedUtilities] getObject:[[replaceItems objectAtIndex:x] stringInBetweenPrefix:@"[tag:" suffix:@"]"]] :
 			[replaceItems objectAtIndex:x];
 			if(rep!=nil)
 				self = [self stringByReplacingOccurrencesOfString:[items objectAtIndex:x] withString:rep];	
@@ -117,7 +192,7 @@ static File *sharedFile = nil;
 	NSMutableDictionary *newDict = [NSMutableDictionary dictionary];
 	for(NSString *tags in cleanTags){
 		NSArray *contents = [self arrayWithXMLTag:tags];
-		[newDict setObject:contents forKey:tags];
+		[newDict setObject:([contents count]==1) ? [contents objectAtIndex:0] : contents forKey:tags];
 	}
 	return newDict;
 	
@@ -126,7 +201,7 @@ static File *sharedFile = nil;
 	//Detect if there are tags
 	NSArray *tags = [self arrayWithStringBetweenPrefix:@"[tag:" suffix:@"]"];
 	for(int x=0;x<[tags count];x++){
-		NSString *val = [[File sharedFile] getObject:[tags objectAtIndex:x]];
+		NSString *val = [[Utilities sharedUtilities] getObject:[tags objectAtIndex:x]];
 		if(val!=nil){
 			self = [self stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"[tag:%@]",[tags objectAtIndex:x]]
 												   withString:val];	
@@ -140,34 +215,34 @@ static File *sharedFile = nil;
 	return self;
 }
 - (void)saveAs:(NSString *)tag {
-	[[File sharedFile] saveObject:self Key:tag];
+	[[Utilities sharedUtilities] saveObject:self Key:tag];
 }
 - (void)loadFrom:(NSString *)tag {
-	self = [[File sharedFile] getObject:tag];
+	self = [[Utilities sharedUtilities] getObject:tag];
 }
 + (NSString *)loadFrom:(NSString *)tag {
-	return [[File sharedFile] getObject:tag];
+	return [[Utilities sharedUtilities] getObject:tag];
 }
 @end
-@implementation File
+@implementation Utilities
 
-+ (File *)sharedFile
++ (Utilities *)sharedUtilities
 {
 	@synchronized(self)
 	{
-		if (sharedFile == nil)
-			sharedFile = [[File alloc] init];
+		if (sharedUtilities == nil)
+			sharedUtilities = [[Utilities alloc] init];
 	}
 	// to avoid compiler warning
-	return sharedFile;
+	return sharedUtilities;
 }
 +(id)allocWithZone:(NSZone *)zone
 {
 	@synchronized(self)
 	{
-		if(sharedFile == nil){
-			sharedFile = [super allocWithZone:zone];
-			return sharedFile;
+		if(sharedUtilities == nil){
+			sharedUtilities = [super allocWithZone:zone];
+			return sharedUtilities;
 		}
 	}
 	// to avoid compiler warning
@@ -201,20 +276,19 @@ static File *sharedFile = nil;
     if (self) {
 		NSFileManager *manager = [NSFileManager defaultManager];
 		
-		if (![manager fileExistsAtPath:[filepath stringByAppendingString:@"/data.txt"]]){ // data not exist
+		if (![manager fileExistsAtPath:[FILEPATH stringByAppendingString:@"/data.txt"]]){ // data not exist
 			dict = [[NSMutableDictionary alloc] init];
 			
-			[dict writeToFile:[filepath stringByAppendingString:@"/data.txt"] atomically:YES];
+			[dict writeToFile:[FILEPATH stringByAppendingString:@"/data.txt"] atomically:YES];
 		} else {
-			dict = [[NSMutableDictionary alloc] initWithContentsOfFile:[filepath stringByAppendingString:@"/data.txt"]];
+			dict = [[NSMutableDictionary alloc] initWithContentsOfFile:[FILEPATH stringByAppendingString:@"/data.txt"]];
 		}
 	}
     return self;
 }
 -(void) saveObject:(id)object Key:(NSString*)key{
 	[dict setObject:object forKey:key];
-	[dict writeToFile:[filepath stringByAppendingString:@"/data.txt"] atomically:YES];
-	//NSLog(@"Saving %@ = %@",key,object);
+	[dict writeToFile:[FILEPATH stringByAppendingString:@"/data.txt"] atomically:YES];
 }
 -(NSString *)param:(int)i {
 	switch (i) {
@@ -239,7 +313,6 @@ static File *sharedFile = nil;
 	}
 }
 -(id) getObject:(NSString*)key{
-	//NSLog(@"Retrieving %@ = %@",key,[NSString stringWithFormat:@"%@",[dict objectForKey:key]]);
 	if([TAGS containsObject:key]){
 		int idx = -1;
 		for(int x=0;x<[TAGS count];x++)
@@ -253,7 +326,7 @@ static File *sharedFile = nil;
 		return [dict objectForKey:key];
 }
 -(void) removeAllData{
-	[[NSMutableDictionary dictionaryWithCapacity:10] writeToFile:[filepath stringByAppendingString:@"/data.txt"] atomically:YES];	
+	[[NSMutableDictionary dictionaryWithCapacity:10] writeToFile:[FILEPATH stringByAppendingString:@"/data.txt"] atomically:YES];	
 }
 -(NSArray*) allValues:(NSUInteger*)i{
 	return [dict allValues];
@@ -264,6 +337,66 @@ static File *sharedFile = nil;
 	dict = nil;	
 	
 	[super dealloc];
+}
+#pragma mark Animation/Graphic Methods
+- (UIImage *)imageForView:(UIView *)thisView {
+    UIGraphicsBeginImageContext(thisView.frame.size);
+    [thisView.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
+
+-(void)animateBounce:(UIView *)thisView {
+    thisView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.001, 0.001);
+    [UIView beginAnimations:@"bounce" context:[[NSArray alloc] initWithObjects:[NSNumber numberWithInt:1],thisView,nil]];
+    [UIView setAnimationDuration:bounceDuration/1.5];
+    [UIView setAnimationDelegate:self];
+    [UIView setAnimationDidStopSelector:@selector(animationFinished:finished:context:)];
+    thisView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.1, 1.1);
+    [UIView commitAnimations];
+}
+- (void)animationFinished:(NSString *)animationID finished:(BOOL)finish context:(NSArray *)context
+{
+    if ([animationID isEqualToString:@"bounce"])
+    {
+        switch ([[context objectAtIndex:0] intValue]) {
+            case 1:
+            {
+                [UIView beginAnimations:@"bounce" context:[[NSArray alloc] initWithObjects:[NSNumber numberWithInt:2],[context objectAtIndex:1],nil]];
+                [UIView setAnimationDuration:bounceDuration/2];
+                [UIView setAnimationDelegate:self];
+                [UIView setAnimationDidStopSelector:@selector(animationFinished:finished:context:)];
+                ((UIView *)[context objectAtIndex:1]).transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.9, 0.9);
+                [context release];
+                [UIView commitAnimations];
+            }
+                break;
+                
+            case 2:
+            {
+                [UIView beginAnimations:@"bounce" context:nil];
+                [UIView setAnimationDuration:bounceDuration/2];
+                [UIView setAnimationDelegate:self];
+                [UIView setAnimationDidStopSelector:@selector(animationFinished:finished:context:)];
+                ((UIView *)[context objectAtIndex:1]).transform = CGAffineTransformIdentity;
+                [context release];
+                [UIView commitAnimations];
+            }
+                break;
+        }
+    }
+}
+- (UIView *)loadNibView:(NSString *)nibNamed {
+    return [self loadNibView:nibNamed viewIndex:0];
+}
+- (UIView *)loadNibView:(NSString *)nibNamed viewIndex:(int)index {
+    NSArray* nibViews = [[NSBundle mainBundle] loadNibNamed:nibNamed
+                                                      owner:self
+                                                    options:nil];
+    
+    return [nibViews objectAtIndex:index];
 }
 @end
 
